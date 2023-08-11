@@ -3,18 +3,19 @@ import '@unocss/reset/tailwind.css'
 import "./style.css"
 import App from "./App.vue"
 import 'virtual:uno.css'
-import { setupRouter } from "./routers"
+import { setupRouter } from "./routes"
 import { setupStore } from "./stores"
 
 const app = createApp(App)
 
 const setupPlugin = () => {}
 
-const setupApp = () => {
+const setupApp = async() => {
   setupStore(app)
-  setupRouter(app)
-  app.mount("#app")
+  await setupRouter(app)
 }
 
 setupPlugin()
 setupApp()
+
+app.mount("#app")

@@ -1,3 +1,3 @@
 # ffmepg-demo
 
-![node](https://img.shields.io/badge/node-18.10.0-green.svg)
+![node](https://img.shields.io/badge/node-18.17.0-green.svg)

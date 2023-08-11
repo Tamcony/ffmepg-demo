@@ -15,8 +15,8 @@
     ],
     "skipLibCheck": true,
     "noEmit": true,
-    "baseUrl": ".", // 用于设置解析非相对模块名称的基本目录，相对模块不会受到baseUrl的影响
-    "paths": { // 用于设置模块名到基于baseUrl的路径映射
+    "baseUrl": ".",
+    "paths": {
       "@/*": [
         "src/*"
       ]
@@ -28,10 +28,13 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "types/*"
-  ],
+, "unocss.config.ts"  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "devDependencies": {
+    "@types/eslint-scope": "^3.7.0"
+  }
 }
