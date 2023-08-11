@@ -9,6 +9,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ASwitch: typeof import('ant-design-vue/es')['Switch']
+    AUpload: typeof import('ant-design-vue/es')['Upload']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
